@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook - Sesión 12: ¡Entrega del Prototipo Avanzado! – ¡Misión Cumplida!</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        .header { background-color: #ffa500; color: white; text-align: center; padding: 10px; } /* Orange Accent */
+        .activity { margin-bottom: 20px; }
+        details > summary {
+            background-color: #ffa500; /* Orange Accent */
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            margin-bottom: 0px; /* Reduced margin */
+            font-weight: bold;
+            list-style: none; /* Hide default arrow */
+            position: relative;
+            outline: none;
+            border-radius: 5px 5px 0 0; /* Rounded top corners */
+        }
+        details > summary::-webkit-details-marker { display: none; } /* Hide default arrow for Chrome/Safari */
+        details > summary::before { /* Custom Arrow */
+            content: '▶';
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.9em; /* Slightly larger arrow */
+            transition: transform 0.2s;
+        }
+        details[open] > summary::before { /* Custom Arrow when open */
+            transform: translateY(-50%) rotate(90deg);
+        }
+        details .content { /* Content visible by default inside details */
+             display: block;
+             padding: 15px; /* More padding */
+             border: 1px solid #ddd;
+             border-top: none; /* Avoid double border with summary */
+             margin-bottom: 10px;
+             border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px; /* Add some space above the table */
+        }
+        th, td {
+            padding: 12px; /* Slightly more padding */
+            border: 1px solid #ddd;
+            text-align: left;
+            vertical-align: top; /* Ensure content aligns at the top */
+        }
+        th {
+            background-color: #f8f8f8; /* Lighter grey background for headers */
+            font-weight: bold;
+        }
+        /* Style for the 'Action' column */
+        td:first-child {
+            width: 50%;
+        }
+        /* Style for the 'Dialogue' column */
+        td:last-child {
+            width: 50%;
+        }
+        /* Making facilitator instructions clearer */
+        td em, td i { /* Style for italicized facilitator notes */
+            color: #555;
+            font-style: italic;
+            display: block; /* Put notes on new lines */
+            margin-top: 5px;
+        }
+        /* Ensure step <strong> tags render bold */
+        td strong { font-weight: bold; display: block; margin-bottom: 5px; }
+
+
+        span[style*="color: red;"] {
+            font-weight: bold;
+        }
+        ul, ol {
+            margin-top: 5px; /* Adjust spacing for lists */
+            margin-bottom: 10px;
+            padding-left: 25px; /* Indent lists slightly more */
+        }
+        li {
+            margin-bottom: 8px; /* More space between list items */
+        }
+        .time-title { margin-bottom: 20px; text-align: center; font-size: 1.2em; color: #555; font-weight: bold;}
+         hr { border: none; border-top: 1px solid #eee; margin: 8px 0; } /* Subtle separator */
+         .subtitle { font-size: 0.9em; color: #e0e0e0; margin-top: 5px;} /* Subtitle style from example */
+    </style>
+    <script>
+        // Basic script to ensure details elements work consistently if needed,
+        // but modern browsers handle <details> natively.
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Playbook - Sesión 12: ¡Entrega del Prototipo Avanzado! – ¡Misión Cumplida!</h1>
+    </div>
+    <div class="container">
+        <h2 class="time-title">Tiempo efectivo de clase: 40 minutos</h2>
+
+        <!-- Resumen de Sesión -->
+        <details id="activity-0" class="activity" open> <!-- Open by default -->
+            <summary>📝 Resumen de Sesión</summary>
+            <div class="content">
+                <table>
+                    <tr>
+                        <td style="width: 50%; padding: 10px; border-right: 1px solid #ddd;">
+                            <strong>🎯 Objetivo de la Sesión:</strong>
+                            <ul>
+                                <li>Realizar el guardado final y definitivo del proyecto Scratch Jr. avanzado.</li>
+                                <li>Asegurar que el nombre del archivo sea correcto y claro según las indicaciones.</li>
+                                <li>Preparar el proyecto para la entrega al profesor (sin necesidad de presentación formal en clase).</li>
+                                <li>Celebrar la finalización exitosa del proyecto y el esfuerzo del equipo.</li>
+                            </ul>
+                        </td>
+                        <td style="width: 50%; padding: 10px;">
+                            <strong>🔑 Entregable Clave:</strong> Proyecto Scratch Jr. final, guardado definitivamente con el nombre correcto, y dispositivo(s) listos según el procedimiento de entrega establecido.
+                            <br><br>
+                            <strong>⏱️ Duración Estimada:</strong> 40 minutos.
+                            <br><br>
+                            <strong>🛠️ Materiales Específicos:</strong>
+                            <ul>
+                                <li>Dispositivos con Scratch Jr. y el proyecto finalizado guardado de la Sesión 11.</li>
+                                <li>Tablero Kanban (para mover las últimas tareas a "¡Listo!").</li>
+                                <li>Tarjetas de tarea: "Guardar Versión Final Definitiva", "Preparar Entrega Final".</li>
+                                <li>Instrucciones claras del profesor sobre el procedimiento exacto de entrega (ej. lugar designado para las tablets, nombre de archivo específico).</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+        <!-- Actividad 1: Saludo y Meta de Entrega -->
+        <details id="activity-1" class="activity">
+            <summary>👋 Actividad 1: Saludo y Meta de Entrega ⏰ Tiempo: 5 minutos</summary>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1 (3 min): ¡El Gran Día!</strong>
+                            <br>Reunir a los equipos con sus proyectos listos en los dispositivos.
+                            <br>Felicitar por haber llegado a la última sesión del prototipo avanzado.
+                            <br>Anunciar el objetivo: preparar la entrega final.
+                            <br><strong>Proyectar Diapositiva 1</strong> (Título de la Sesión + Iconos: Bandera de meta 🏁, Paquete/Regalo 🎁, Cohete despegando 🚀).
+                        </td>
+                        <td>
+                            "¡Héroes! ¡Hoy es EL DÍA! ¡La última sesión de nuestra increíble aventura de creación!"
+                            <br><br>
+                            "Han trabajado muchísimo y han creado un prototipo avanzado fantástico. ¡Estoy muy orgulloso de todo su esfuerzo!"
+                            <br><br>
+                            "Nuestra misión final de hoy es preparar nuestra Aventura ODS para la ¡ENTREGA! <em>(Mostrar Diapositiva 1)</em>. Vamos a asegurarnos de que todo esté perfecto para que yo (el profe) pueda ver su magnífico trabajo después."
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 2 (2 min): Kanban Final</strong>
+                             <br>Mostrar el Kanban.
+                             <br>Añadir las últimas tarjetas: "Guardar Versión Final Definitiva", "Preparar Entrega Final" a "Tareas por Hacer".
+                             <br>Explicar que hoy moverán estas tarjetas a "¡Listo!".
+                        </td>
+                        <td>
+                            "Miremos nuestro Mapa Mágico por última vez. Añadiremos nuestras tareas finales: 'Guardar Versión Final Definitiva' y 'Preparar Entrega Final'."
+                            <br><br>
+                            "Hoy, nuestro objetivo es mover estas dos tarjetas directamente a la columna de ¡Listo! ¿Preparados para el último empujón?"
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+        <!-- Actividad 2: Preparación Final para Entrega -->
+        <details id="activity-2" class="activity">
+            <summary>📦 Actividad 2: Preparación Final para Entrega ⏰ Tiempo: 30 minutos</summary>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1 (5 min): Abrir Proyecto y Prueba Rápida (Todo el Equipo)</strong>
+                            <br>Pedir a los equipos que abran su proyecto final guardado en la Sesión 11.
+                            <br>Realizar UNA última prueba rápida del flujo principal y la interacción extra para confirmar que todo carga y funciona como se espera.
+                        </td>
+                        <td>
+                            "¡Equipos, abran su proyecto final, el que guardamos la última vez!"
+                            <br><br>
+                            "Vamos a hacer UNA prueba súper rápida juntos. Jueguen la aventura una vez más, probando ambos caminos y la sorpresa. Solo para asegurarnos de que todo carga bien y funciona como lo dejamos."
+                             <br>
+                            <em>(Esperar a que los equipos hagan una pasada rápida).</em> "¿Todo en orden? ¡Genial!"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 2 (10 min): Confirmar Nombre y Guardado Final (Constructor/a con guía del Profe)</strong>
+                            <br>El **Constructor/a**, con ayuda directa y supervisión del **Profesor**, verifica/establece el nombre final y correcto del archivo (Ej: "EquipoRojo_AguaLimpia_Final").
+                            <br>Realizar el GUARDADO FINAL Y DEFINITIVO. Asegurarse de que NO haya cambios pendientes. Doble-chequear que se guardó.
+                            <br><strong>Proyectar Diapositiva 2</strong> (Mostrar visualmente dónde se ve/cambia el nombre del proyecto en Scratch Jr. y el botón final de guardar/salir, quizás con una checklist: [ ] Nombre Correcto, [ ] Guardado Final).
+                        </td>
+                        <td>
+                            "¡Atención Constructores, paso crucial con mi ayuda! Vamos a asegurarnos de que el nombre de su proyecto sea el correcto y definitivo."
+                            <br><br>
+                            "<em>(El profesor guía individualmente o en grupo)</em> Busquen dónde está el nombre de su proyecto... ¿Es claro? ¿Incluye el nombre del equipo y el tema? Pongámosle un nombre final como 'Equipo[SuColor]_[SuTema]_FINAL'. <em>(Mostrar Diapositiva 2 como guía)</em>."
+                            <br><br>
+                            "Ahora... ¡el guardado DEFINITIVO! Asegúrense de que no quede nada sin guardar. Pulsen el botón final de guardar/salir (casita o ✓)."
+                            <br><br>
+                            "<em>(El profesor verifica que el guardado se realice correctamente en cada dispositivo).</em> ¿Guardado y con el nombre correcto? ¡Perfecto!"
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 3 (10 min): Confirmación Final Roles y Entrega (Diseñador/a, Probador/a, y Profe Explica)</strong>
+                            <br>El **Diseñador/a** y el **Probador/a** dan el visto bueno final: confirman que la versión guardada es la correcta y completa.
+                            <br>El **Profesor** explica CLARAMENTE el procedimiento de entrega:
+                            <ul>
+                                <li>Dónde dejar las tablets (ej. mesa frontal, carrito específico).</li>
+                                <li>Confirmar el nombre con el que se guardó para poder identificarlo.</li>
+                                <li>Instrucción MUY IMPORTANTE: "No borren nada", "No creen proyectos nuevos encima".</li>
+                            </ul>
+                             <br><strong>Proyectar Diapositiva 3</strong> (Mostrar visualmente el procedimiento de entrega: ej. dibujo de la mesa designada, ejemplo del nombre de archivo, símbolo grande de "NO BORRAR" 🚫).
+                        </td>
+                        <td>
+                            "Diseñadores y Probadores, ¿dan su visto bueno final? ¿Confirman que esta versión guardada es la obra maestra completa?"
+                            <br><br>
+                            <em>(Esperar confirmación del equipo).</em> ¡Excelente!"
+                            <br><br>
+                            "Ahora, escuchen con atención CÓMO vamos a 'entregar' el proyecto para que yo pueda verlo luego. <em>(Mostrar Diapositiva 3)</em>."
+                            <br><br>
+                            "1. Cuando terminen, van a dejar la tablet con cuidado en [explicar lugar exacto, ej: la mesa aquí delante]."
+                            <br>
+                            "2. Yo buscaré los proyectos con el nombre que acabamos de poner: 'Equipo[Color]_[Tema]_FINAL'."
+                            <br>
+                            "3. ¡MUY IMPORTANTE! Una vez guardado, NO BORREN NADA ni creen otros proyectos ahora mismo. Solo dejen la tablet en el lugar indicado."
+                            <br><br>
+                            "¿Entendido el plan de entrega?"
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <strong>Paso 4 (5 min): Preparar Dispositivo y Kanban</strong>
+                            <br>Los equipos cierran el proyecto (si es necesario) y preparan la tablet para dejarla en el lugar indicado.
+                            <br>Mover las tarjetas "Guardar Versión Final Definitiva" y "Preparar Entrega Final" a "✅ ¡Listo!" en el Kanban.
+                        </td>
+                        <td>
+                            "¡Muy bien! Ahora, con cuidado, cierren el proyecto si hace falta y preparen la tablet."
+                            <br><br>
+                            "¡Y en nuestro Mapa Mágico! ¡Muevan las últimas tarjetas, 'Guardar Versión Final Definitiva' y 'Preparar Entrega Final', a la columna de '✅ ¡Listo!' con un gran sentimiento de logro!"
+                             <br>
+                            <em>(Asegurarse de que todos actualicen el Kanban).</em>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+        <!-- Actividad 3: Gnius: Prototipo Entregado y Celebración -->
+        <details id="activity-3" class="activity">
+            <summary>🥳 Actividad 3: Gnius: Prototipo Entregado y Celebración ⏰ Tiempo: 5 minutos</summary>
+            <div class="content">
+                <table>
+                    <tr>
+                        <th style="width: 50%;">Acción</th>
+                        <th style="width: 50%;">Diálogo del Maestro</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Paso 1 (5 min): Celebración y Reconocimiento</strong>
+                            <br>Una vez que las tablets están en el lugar designado, reunir al grupo.
+                            <br>Realizar una celebración final: aplausos, choque de manos, reconocimiento verbal del esfuerzo y la creatividad.
+                            <br><strong>Proyectar Diapositiva 4</strong> (Mensaje "¡MISIÓN CUMPLIDA!" + Confeti 🎉, Trofeos 🏆, Medallas 🥇, Estrellas ✨).
+                        </td>
+                        <td>
+                            "¡EQUIPOS DE HÉROES! ¡MISIÓN CUMPLIDA! <em>(Mostrar Diapositiva 4)</em>."
+                            <br><br>
+                            "¡Han completado su prototipo avanzado! ¡Han transformado sus ideas y dibujos en una increíble Aventura ODS interactiva desde cero!"
+                            <br><br>
+                            "Estoy MUY, MUY orgulloso de todo su trabajo, su creatividad, su esfuerzo y cómo han colaborado en equipo. ¡Han demostrado ser verdaderos Héroes al Rescate ODS!"
+                            <br><br>
+                            "¡Un GRAN APLAUSO para todos ustedes! ¡Choquen esas manos con sus compañeros! ¡Celebremos este gran logro!"
+                            <br><br>
+                            <em>(Liderar aplausos y gestos de celebración).</em> "¡Lo hicieron increíble! ¡Gracias por esta fantástica aventura!"
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </details>
+
+    </div> <!-- Fin del container -->
+</body>
+</html>
